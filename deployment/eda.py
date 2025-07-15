@@ -12,7 +12,7 @@ def app():
     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     """)
 
-    st.header("Distribusi Label ")
+    st.header("Distribusi Data")
     df = pd.DataFrame({
         "A": np.random.randn(50),
         "B": np.random.rand(50),
