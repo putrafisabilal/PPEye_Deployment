@@ -1,7 +1,6 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+import os
+from PIL import Image
 
 # st.set_page_config(page_title="EDA Page", layout="wide")
 
@@ -12,28 +11,61 @@ def app():
     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     """)
 
-    st.header("Distribusi Data")
-    df = pd.DataFrame({
-        "A": np.random.randn(50),
-        "B": np.random.rand(50),
-        "C": np.random.randint(0, 100, 50)
-    })
-    st.dataframe(df)
+    # folder images
+    folder_path = "images"
+    
+    
+    # EDA 1
+    st.header("Distribusi Label Pada Dataset")
 
-    st.header("Histogram Example")
-    fig, ax = plt.subplots()
-    ax.hist(df["A"], bins=15, color="skyblue", edgecolor="black")
-    ax.set_title("Distribution of Column A")
-    st.pyplot(fig)
+    # Buka gambar dan tampilkan
+    eda1 = os.path.join(folder_path, "eda1.png")  # pastikan file ini ada
+    image1 = Image.open(eda1)
+    st.image(image1, caption="")
 
-    st.header("Scatter Plot Example")
-    fig2, ax2 = plt.subplots()
-    ax2.scatter(df["A"], df["B"], c=df["C"], cmap="viridis")
-    ax2.set_xlabel("A")
-    ax2.set_ylabel("B")
-    ax2.set_title("Scatter Plot of A vs B")
-    st.pyplot(fig2)
+    st.markdown("""
+                """)
+    
+    # EDA 2
+    st.header("Distribusi Resolusi Gambar per Subset")
 
-    st.write("""
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    """)
+    # Buka gambar dan tampilkan
+    eda2 = os.path.join(folder_path, "eda2.png")  # pastikan file ini ada
+    image2 = Image.open(eda2)
+    st.image(image2, caption="")
+
+    st.markdown("""
+                """)
+    
+    # EDA 3
+    st.header("Heatmap Bounding Box")
+
+    # Buka gambar dan tampilkan
+    eda3 = os.path.join(folder_path, "eda3.png")  # pastikan file ini ada
+    image3 = Image.open(eda3)
+    st.image(image3, caption="")
+
+    st.markdown("""
+                """)
+    
+    # EDA 4
+    st.header("Distribusi Rasio Bounding Box")
+
+    # Buka gambar dan tampilkan
+    eda4 = os.path.join(folder_path, "eda4.png")  # pastikan file ini ada
+    image4 = Image.open(eda4)
+    st.image(image4, caption="")
+
+    st.markdown("""
+                """)
+    
+    # EDA 5
+    st.header("Heatmap Distribusi Letak Bounding Box Setiap Label")
+
+    # Buka gambar dan tampilkan
+    eda5 = os.path.join(folder_path, "eda5.png")  # pastikan file ini ada
+    image5 = Image.open(eda5)
+    st.image(image5, caption="")
+
+    st.markdown("""
+                """)
