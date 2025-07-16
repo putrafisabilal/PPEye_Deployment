@@ -1,8 +1,8 @@
 import streamlit as st
+from ultralytics import YOLO
 import os
 import cv2
 import numpy as np
-from ultralytics import YOLO
 import tempfile
 import time
 
