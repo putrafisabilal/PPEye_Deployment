@@ -53,7 +53,7 @@ def app():
     # Baris 2
     col3, col4 = st.columns(2)
     with col3:
-        st.image(Image.open("images/rafi.jpg"), width=200, caption="Rafi Arya Siregar – Data Analyst, Data Anotator \n\n Membantu analisis data dan memberi label dataset pelatihan.")
+        st.image(Image.open("images/rafi.jpg"), width=200, caption="Rafi Arya Siregar – Data Analyst, Data Anotator \n\n Melakukan eksplorasi data dan memberikan anotasi pada dataset untuk pelatihan.")
 
     with col4:
         st.image(Image.open("images/rifqi.png"), width=200, caption="Rifqi Munif Imanullah – Data Scientist, Data Anotator \n\n Mengawasi proses testing sistem dan menjamin kualitas aplikasi.")
