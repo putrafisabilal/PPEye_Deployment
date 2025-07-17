@@ -39,7 +39,6 @@ def app():
 
     # Tim Kami
     st.markdown("### 👨‍💻 Tim Kami")
-    st.markdown("<div style='text-align: center; color: gray;'>Orang-orang hebat di balik pengembangan PPEye</div>", unsafe_allow_html=True)
     st.markdown("")
 
     # Baris 1
