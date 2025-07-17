@@ -45,7 +45,7 @@ def app():
     # Baris 1
     col1, col2 = st.columns(2)
     with col1:
-        st.image(Image.open("images/pesoy.jpg"), width=200, caption="Gregorius Yoseph Radityo – Project Manager, Data Engineer \n\n Memimpin tim dan bertanggung jawab atas keseluruhan pengembangan proyek")
+        st.image(Image.open("images/pesoyy.jpg"), width=200, caption="Gregorius Yoseph Radityo – Project Manager, Data Engineer \n\n Memimpin tim dan bertanggung jawab atas keseluruhan pengembangan proyek")
 
     with col2:
         st.image(Image.open("images/bilal.jpg"), width=200, caption="Putra Fisabil Muhammad – Data Engineer, Data Scientist, Data Anotator  \n\n Mengembangkan model deteksi YOLO dan mengelola dataset pelatihan.")
