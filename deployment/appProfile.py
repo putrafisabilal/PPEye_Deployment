@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 
 def app():
     # Page Title
@@ -34,30 +33,36 @@ def app():
     """)
 
     st.markdown("---")
+     # TEAM PROFILE SECTION
+    st.markdown("<h1 style='font-size: 48px; text-align: center;'>TIM KAMI</h1>", unsafe_allow_html=True)
+    # Create four columns
+    col1, col2, col3, col4, col5 = st.columns(5)
 
-    from PIL import Image
-
-    # Tim Kami
-    st.markdown("### 👨‍💻 Tim Kami")
-    st.markdown("")
-
-    # Baris 1
-    col1, col2 = st.columns(2)
+    # Display each image in its respective column
     with col1:
-        st.image(Image.open("images/pesoyy.jpg"), width=200, caption="Gregorius Yoseph Radityo – Project Manager, Data Engineer \n\n Memimpin tim dan bertanggung jawab atas keseluruhan pengembangan proyek")
+        st.image("images/kalis.jpg", use_container_width=True)
+        st.write("<p style='text-align: center;'>Lis Wahyuni</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center;font-weight: bold;'>Mentor</p>", unsafe_allow_html=True)
 
     with col2:
-        st.image(Image.open("images/bilal.jpg"), width=200, caption="Putra Fisabil Muhammad – Data Engineer, Data Scientist, Data Anotator  \n\n Mengembangkan model deteksi YOLO dan mengelola dataset pelatihan.")
-        st.markdown("<div style='text-align: center;'></div>", unsafe_allow_html=True)
+        st.image("images/pesoy.png", use_container_width=True)
+        st.write("<p style='text-align: center;'>Gregorius Yoseph Radityo</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center;font-weight: bold;'>Project Manager, Data Engineer</p>", unsafe_allow_html=True)
 
-    # Baris 2
-    col3, col4 = st.columns(2)
     with col3:
-        st.image(Image.open("images/rafi.jpg"), width=200, caption="Rafi Arya Siregar – Data Analyst, Data Anotator \n\n Melakukan eksplorasi data dan memberikan anotasi pada dataset untuk pelatihan.")
+        st.image("images/bilal.png", use_container_width=True)
+        st.write("<p style='text-align: center;'>Putra Fisabil Muhammad</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center;font-weight: bold;'>Data Engineer, Data Scientist, & Data Anotator</p>", unsafe_allow_html=True)
 
     with col4:
-        st.image(Image.open("images/rifqi.png"), width=200, caption="Rifqi Munif Imanullah – Data Scientist, Data Anotator \n\n Mengawasi proses testing sistem dan menjamin kualitas aplikasi.")
+        st.image("images/rafi.png", use_container_width=True)
+        st.write("<p style='text-align: center;'>Rafi Arya Siregar</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center;font-weight: bold;'>Data Analyst & Data Anotator</p>", unsafe_allow_html=True)
 
+    with col5:
+        st.image("images/rifqi.png", use_container_width=True)
+        st.write("<p style='text-align: center;'>Rifqi Munif Imanullah</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center;font-weight: bold;'>Data Scientist & Data Anotator</p>", unsafe_allow_html=True)
 
     st.markdown("---")
 
@@ -66,7 +71,10 @@ def app():
     st.markdown("""
     Jika Anda ingin berdiskusi lebih lanjut atau tertarik dengan implementasi sistem PPEye, silakan hubungi kami:
 
-    - 📧 **Email:** [bilalputra17@gmail.com](mailto:bilalputra17@gmail.com)  
+    - 📧 **Email:** [yoseph.radityo@gmail.com](mailto:yoseph.radityo@gmail.com)
+    - 📧 **Email:** [bilalputra17@gmail.com](mailto:bilalputra17@gmail.com)
+    - 📧 **Email:** [rafaryasiregar@gmail.com](mailto:rafaryasiregar@gmail.com) 
+    - 📧 **Email:** [imanullahrifqi@gmail.com](mailto:imanullahrifqi@gmail.com)             
     """)
 
     st.markdown("---")
