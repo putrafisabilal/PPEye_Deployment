@@ -7,7 +7,7 @@ import appProfile
 import inference
 
 st.sidebar.title("PPE")
-page = st.sidebar.radio("Pilihan menu:)", ("Perkenalan", "EDA", "Prediksi"), index=0)
+page = st.sidebar.radio("Pilihan menu:", ("Perkenalan", "EDA", "Prediksi"), index=0)
 
 
 st.sidebar.markdown("<br><br>", unsafe_allow_html=True)
