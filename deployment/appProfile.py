@@ -3,7 +3,7 @@ from PIL import Image
 
 def app():
     # Page Title
-    st.markdown("<h1 style='text-align: center; color: #4CAF50;'>👷‍♂️ Selamat Datang di <span style='color:#FF5733'>PPEye</span></h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: #4CAF50;'>😷 Selamat Datang di <span style='color:#FF5733'>PPEye</span></h1>", unsafe_allow_html=True)
     st.markdown("<h4 style='text-align: center; color: gray;'>Sistem AI untuk Deteksi Kepatuhan Alat Pelindung Diri (APD)</h4>", unsafe_allow_html=True)
     st.markdown("---")
 
@@ -35,14 +35,39 @@ def app():
 
     st.markdown("---")
 
+    from PIL import Image
+
+    # Tim Kami
+    st.markdown("### 👨‍💻 Tim Kami")
+    st.markdown("<div style='text-align: center; color: gray;'>Orang-orang hebat di balik pengembangan PPEye</div>", unsafe_allow_html=True)
+    st.markdown("")
+
+    # Baris 1
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image(Image.open("images/pesoy.jpg"), width=200, caption="Gregorius Yoseph Radityo – Project Manager, Data Engineer \n\n Memimpin tim dan bertanggung jawab atas keseluruhan pengembangan proyek")
+
+    with col2:
+        st.image(Image.open("images/bilal.jpg"), width=200, caption="Putra Fisabil Muhammad – Data Engineer, Data Scientist, Data Anotator  \n\n Mengembangkan model deteksi YOLO dan mengelola dataset pelatihan.")
+        st.markdown("<div style='text-align: center;'></div>", unsafe_allow_html=True)
+
+    # Baris 2
+    col3, col4 = st.columns(2)
+    with col3:
+        st.image(Image.open("images/rafi.jpg"), width=200, caption="Rafi Arya Siregar – Data Analyst, Data Anotator \n\n Membantu analisis data dan memberi label dataset pelatihan.")
+
+    with col4:
+        st.image(Image.open("images/rifqi.png"), width=200, caption="Rifqi Munif Imanullah – Data Scientist, Data Anotator \n\n Mengawasi proses testing sistem dan menjamin kualitas aplikasi.")
+
+
+    st.markdown("---")
+
     # Kontak
     st.markdown("### 📞 Kontak Kami")
     st.markdown("""
     Jika Anda ingin berdiskusi lebih lanjut atau tertarik dengan implementasi sistem PPEye, silakan hubungi kami:
 
-    - 📧 **Email:** [PPEye.ai@gmail.com](mailto:ppEye.ai@gmail.com)  
-    - 📱 **WhatsApp:** +62 812-3456-7890  
-    - 🌐 **Website:** [www.ppeye.id](http://www.ppeye.id) *(Coming Soon)*  
+    - 📧 **Email:** [bilalputra17@gmail.com](mailto:bilalputra17@gmail.com)  
     """)
 
     st.markdown("---")
